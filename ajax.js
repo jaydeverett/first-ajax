@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
     $.ajax( {
     url: 'http://first-ajax-api.herokuapp.com/count',
     method: 'GET',
-    data: {
+    data: { amount: 5
       }
     }).done( function( data ) {
       console.log("post succeeded");
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function() {
       myElement.innerHTML = data;
       ul.append( myElement );
     })
-  })
+    })
 
 
 });
